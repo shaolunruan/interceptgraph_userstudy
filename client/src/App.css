@@ -1,0 +1,203 @@
+@import '~antd/dist/antd.css';
+
+#root{
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+}
+
+
+.container{
+    width: 900px;
+    height: 920px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: solid 1px #cbcbcb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    margin: 50px;
+    align-items: center;
+}
+
+.component{
+    background-color: #ffffff;
+    border: solid 1px #cbcbcb;
+
+}
+
+.buttons{
+    width: 700px;
+    height: 50px;
+    background-color: #ffffff;
+    border: solid 1px #cbcbcb;
+    margin-top: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.progressBar{
+    margin-top: 30px;
+    width: 100%;
+}
+
+#carousel_container{
+    width: 900px;
+    height: 920px;
+}
+
+.ant-carousel .slick-slide {
+    height: 920px;
+    /*line-height:100%;*/
+    overflow: hidden;
+    /*padding: 50px;*/
+}
+
+.slick-dots li  {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#slide img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+}
+
+#slide p{
+    padding: 40px;
+    font-family: "Times New Roman";
+    font-size: 1.2em;
+}
+
+#slide h1{
+    margin-left: 50px;
+}
+
+#slide{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.next_button{
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    /*bottom: 0;*/
+    /*right: 0;*/
+}
+
+.options{
+    position: absolute;
+    left: 10%;
+}
+
+#minitest_container{
+    /*background-color: #f0f0f0;*/
+}
+
+.group{
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+}
+
+button[ant-click-animating-without-extra-node]:after {
+    border: solid 2px #000000;
+    /*opacity: 0;*/
+    outline:none;
+}
+
+/*改变选中状态颜色*/
+.ant-radio-button-checked {
+    /*background: #000000;*/
+    border: solid 2px #000000;
+}
+
+
+
+/******************************for Intercept Graph*****************************************/
+
+
+.outerAxis_rise_, .outerAxis_drop_, .innerAxis_rise_, .innerAxis_drop_{
+    visibility: hidden;
+}
+
+.intercept_rise_residue:hover{
+    cursor: pointer;
+}
+
+.intercept_drop_residue:hover{
+    cursor: pointer;
+}
+
+
+.intercept_rise:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.intercept_drop:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.innerAxis_rise:hover{
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.innerAxis_rise, .innerAxis_drop{
+    stroke-width: 4px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.innerAxis_rise path, .innerAxis_drop path{
+    stroke: #a3a3a3;
+}
+
+.innerAxis_rise .tick, .innerAxis_drop .tick{
+    display: none;
+}
+
+
+.innerAxis_rise path:hover, .innerAxis_drop path:hover{
+    stroke: #4b4b4b;
+}
+
+.innerAxis_drop:hover{
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.lineSegment_rise:hover{
+    cursor: pointer;
+}
+
+.lineSegment_drop:hover{
+    cursor: pointer;
+}
+
+.axis_ticks .tick line{
+    stroke: #e3e3e3;
+}
+
+.intercept_rise_residue, .intercept_drop_residue{
+    stroke-width: 1.5px;
+}
+
+.intercept_rise, .intercept_drop{
+    stroke-width: 1px;
+    opacity: 0.3;
+}
